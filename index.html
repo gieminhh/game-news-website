@@ -38,24 +38,42 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid d-flex justify-content-center position-relative">
-            <div class="search-bar d-flex align-items-center">
-                <input type="text" placeholder="Nhập nội dung tìm kiếm">
-                <i class="fas fa-search"></i>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="index.html" class="btn btn-link">
+                <i class="fas fa-arrow-left"></i>
+                <span class="d-none d-lg-inline">Trang chủ</span>
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSearch">
+                <form class="d-flex w-50">
+                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Nhập nội dung tìm kiếm" aria-label="Search">
+                    <button class="btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
             </div>
-            <div class="navbar-icons position-absolute end-0 d-flex align-items-center">
-                <i class="fas fa-user-circle me-3"></i>
-                <i class="fas fa-th-large me-3"></i>
-                <i class="fas fa-bars"></i>
+
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+                <a class="nav-link" href="#"><i class="fas fa-th-large"></i></a>
+                <a class="nav-link" href="#"><i class="fas fa-bars"></i></a>
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3AA7A3;">
         <div class="container-fluid">
-            <div class="collapse navbar-collapse justify-content-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">TRANG CHỦ</a>
+                        <a class="nav-link" href="./trang-chu.html">TRANG CHỦ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./esport.html">ESPORTS</a>
@@ -110,7 +128,7 @@
     </div>
 
     <!-- Main Title -->
-    <div class="section-title mb-3"><h2>Zenless Zone Zero: Những điều bạn cần biết</h2></div>
+    <div class="section-title mb-4">Zenless Zone Zero: Những điều bạn cần biết</div>
 
     <!-- Featured News -->
     <div class="row">
@@ -221,7 +239,7 @@
             <div class="card">
                 <div class="card-body">
                     <h6 class="text-muted text-center">Quảng Cáo</h6>
-                    <img src="https://via.placeholder.com/380x250" class="img-fluid" alt="Advertisement">
+                    <img src="./shopee.jpg" class="img-fluid" alt="Advertisement">
                 </div>
             </div>
         </div>
@@ -268,3 +286,5 @@
     </div>
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
